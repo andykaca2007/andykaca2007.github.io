@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CO₂ Cold Gas Thruster · Andy Kaca</title>
+  <meta name="description" content="Designing, building and testing a 1.5 N CO₂ cold-gas thruster and flexure-pendulum thrust stand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="../index.html">andy<span>.</span>kaca</a>
+    <ul>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="crumbs"><a href="../index.html#projects">← All projects</a></div>
+
+  <div class="page-head">
+    <span class="status wip">In progress</span>
+    <h1>CO₂ Cold Gas Thruster &amp; Thrust Stand</h1>
+    <p class="lead">A 1.5 N CO₂ cold-gas thruster and the flexure-pendulum thrust stand to test it, built to find out how closely a real nozzle matches isentropic theory.</p>
+  </div>
+
+  <div class="titleblock">
+    <div><div class="k">Started</div><div class="v">July 2026</div></div>
+    <div><div class="k">Target thrust</div><div class="v">1.5 N</div></div>
+    <div><div class="k">Propellant</div><div class="v">CO₂ (cold gas)</div></div>
+    <div><div class="k">Tools</div><div class="v">SolidWorks · Python · ESP32</div></div>
+    <div><div class="k">Type</div><div class="v">Personal project</div></div>
+  </div>
+
+  <article>
+    <!-- Replace with a real photo when you have one: <figure><img src="../assets/img/thruster-1.jpg" alt="..."><figcaption>...</figcaption></figure> -->
+    <div class="placeholder">📷 Photo / CAD render goes here: drop it in <code>assets/img/</code></div>
+
+    <h2>The goal</h2>
+    <p>Cold-gas thrusters are the simplest form of rocket propulsion, and they're still flown on spacecraft for fine attitude control. I wanted to design one from first principles, build it, and then measure how its thrust and specific impulse compare with what isentropic nozzle theory predicts.</p>
+
+    <h2>How it works</h2>
+    <ul>
+      <li><b>Nozzle sizing:</b> a parametric tool in Python, based on choked-flow relations for CO₂, sets the throat and exit geometry for the target thrust. The results feed the CAD model and the manufacturing drawings.</li>
+      <li><b>Thrust stand:</b> a flexure pendulum turns thrust into a small, measurable deflection, read by an HX711 load cell with an ESP32 logging the data.</li>
+      <li><b>Pneumatics:</b> a CO₂-compatible feed system specified to work at sub-zero temperatures, since the gas cools sharply as it expands.</li>
+      <li><b>Data reduction:</b> a Python pipeline handles load-cell calibration and calculates thrust and impulse, with a full uncertainty analysis.</li>
+    </ul>
+
+    <h2>Build log</h2>
+    <div class="log">
+      <!-- Newest entry at the top. Copy an .entry block to add one. -->
+      <div class="entry">
+        <div class="date">Oct 2026</div>
+        <p>All parts have arrived except the solenoid valve. Restarting the build now that term has settled in.</p>
+      </div>
+      <div class="entry">
+        <div class="date">Jul 2026</div>
+        <p>Project started: nozzle-sizing tool, thrust stand concept and parts list.</p>
+      </div>
+    </div>
+
+    <h2>Results</h2>
+    <div class="placeholder">📈 Thrust curves, measured vs theoretical: coming once testing starts</div>
+
+    <h2>Code</h2>
+    <p>The nozzle-sizing tool and data pipeline will be published on <a href="https://github.com/andykaca2007">GitHub</a>.</p>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Andy Kaca</span>
+    <a href="../index.html">Back to portfolio</a>
+  </div>
+</footer>
+
+</body>
+</html>

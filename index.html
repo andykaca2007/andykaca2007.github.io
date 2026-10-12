@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andy Kaca · Mechanical Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio of Andy Kaca, MEng Mechanical Engineering at Imperial College London: propulsion, mechanisms and test hardware.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">andy<span>.</span>kaca</a>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li class="hide-sm"><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="tag">MEng Mechanical Engineering · Imperial College London</div>
+    <h1>I build hardware,<br>then test it against the maths.</h1>
+    <!-- EDIT ME: make this intro sound like you. -->
+    <p class="lead">I'm Andy, a second-year mechanical engineer working toward a career in the space industry: rocketry, propulsion and spacecraft. I'm also interested in nuclear fusion. Right now I'm building a CO₂ cold-gas thruster and the thrust stand to test it.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See projects</a>
+      <a class="btn" href="https://linkedin.com/in/andy-kaca">LinkedIn</a>
+      <a class="btn" href="https://github.com/andykaca2007">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Design, build, test. Each one has a build log that I update as it goes.</p>
+
+    <div class="grid">
+      <!-- To add a project: copy a card, and copy projects/_template.html to a new page. -->
+      <a class="card" href="projects/co2-thruster.html">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" width="100%" height="100%" fill="none" stroke="currentColor" style="color:var(--accent-2)" stroke-width="2" aria-hidden="true">
+            <rect x="40" y="70" width="110" height="40" rx="6"/>
+            <path d="M150 78 L190 86 L190 94 L150 102 Z"/>
+            <path d="M190 86 L250 64 M190 94 L250 116 M250 64 L250 116" />
+            <path d="M260 90 h40" stroke="var(--accent)" stroke-dasharray="6 6"/>
+            <path d="M262 76 l30 -8 M262 104 l30 8" stroke="var(--accent)" stroke-dasharray="4 6"/>
+            <text x="40" y="140" font-family="monospace" font-size="11" fill="currentColor" stroke="none">CO₂ · choked flow · 1.5 N</text>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="status wip">In progress</span>
+          <h3>CO₂ Cold Gas Thruster &amp; Thrust Stand</h3>
+          <p>A 1.5 N cold-gas thruster and flexure-pendulum thrust stand, built to measure real nozzle performance against isentropic theory.</p>
+          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">Python</span><span class="chip">ESP32</span><span class="chip">HX711</span></div>
+        </div>
+      </a>
+
+      <a class="card" href="projects/juicer.html">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" width="100%" height="100%" fill="none" stroke="currentColor" style="color:var(--accent-2)" stroke-width="2" aria-hidden="true">
+            <circle cx="125" cy="80" r="34"/><circle cx="195" cy="80" r="34"/>
+            <circle cx="125" cy="80" r="4"/><circle cx="195" cy="80" r="4"/>
+            <path d="M160 30 v14" stroke="var(--accent)"/><path d="M154 38 l6 8 l6 -8" stroke="var(--accent)"/>
+            <path d="M120 130 h80 l-10 24 h-60 Z"/>
+            <text x="40" y="170" font-family="monospace" font-size="11" fill="currentColor" stroke="none">DMF · Year 2</text>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="status wip">In progress</span>
+          <h3>Juicer: Design &amp; Manufacture</h3>
+          <p>My Year 2 Design &amp; Manufacture project at Imperial: designing and building a working juicer.</p>
+          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">Python</span><span class="chip">Manufacture</span></div>
+        </div>
+      </a>
+
+      <div class="card">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" width="100%" height="100%" fill="none" stroke="currentColor" style="color:var(--accent-2)" stroke-width="2" aria-hidden="true">
+            <circle cx="120" cy="90" r="40"/><circle cx="120" cy="90" r="8"/>
+            <circle cx="198" cy="90" r="24"/><circle cx="198" cy="90" r="6"/>
+            <path d="M60 90 h-30 M258 90 h30" stroke-dasharray="8 4"/>
+            <text x="40" y="160" font-family="monospace" font-size="11" fill="currentColor" stroke="none">BS 8888 · 12 mm rebar</text>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="status done">Completed · write-up coming</span>
+          <h3>Rebar Bending Machine: Drivetrain</h3>
+          <p>The complete drivetrain for a machine that bends 12 mm rebar: torque, speed and power requirements, motor sizing, a multi-stage transmission, shafts and bearings, and full BS 8888 drawings.</p>
+          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">BS 8888</span><span class="chip">GD&amp;T</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" width="100%" height="100%" fill="none" stroke="currentColor" style="color:var(--accent-2)" stroke-width="2" aria-hidden="true">
+            <rect x="148" y="78" width="24" height="24"/>
+            <path d="M160 78 L160 20 L100 90 L160 160 L160 102 M172 90 L240 90 L160 20 M240 90 L160 160"/>
+            <text x="40" y="172" font-family="monospace" font-size="11" fill="currentColor" stroke="none">9 m² sail · CubeSat</text>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="status done">2025–26</span>
+          <h3>Project Svarog: Solar Sail Deployment</h3>
+          <p>Imperial College Space Society. I led the investigation into packaging and deploying a 9 m² sail, worked on bistable composite booms, and helped redesign the CubeSat frame to cut its mass.</p>
+          <div class="chips"><span class="chip">Deployables</span><span class="chip">Composites</span><span class="chip">FEA</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="sub">Where I've been learning outside the lecture theatre.</p>
+    <div class="timeline">
+      <div class="item">
+        <h3>Site Engineering Construction Operative · Careys Civil Engineering</h3>
+        <div class="meta">Jun – Aug 2026 · London Square Crayford (559-home development)</div>
+        <p>Read setting-out, drainage and reinforcement drawings, and installed foundations and rebar cages to laser-levelled tolerances. When the ground didn't match the drawings, I raised it with the site engineers, which taught me a lot about buildability.</p>
+      </div>
+      <div class="item">
+        <h3>Project Svarog · Imperial College Space Society</h3>
+        <div class="meta">Oct 2025 – Jun 2026</div>
+        <p>Solar sail folding and deployment, bistable composite booms, and the CubeSat structural redesign.</p>
+      </div>
+      <div class="item">
+        <h3>Weizmann Safe-Cracking Tournament: 2nd of 15 teams</h3>
+        <div class="meta">Feb 2024</div>
+        <p>Designed, built and tested a mechanical safe based on parallax and geometric measurement challenges.</p>
+      </div>
+      <div class="item">
+        <h3>British Physics Olympiad Experimental Project: Gold</h3>
+        <div class="meta">2024</div>
+        <p>An experiment on spring hysteresis: analysing force–displacement data and the experimental error.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">The tools I use.</p>
+    <div class="skills">
+      <div class="skill"><h3>CAD &amp; drawing</h3><p>SolidWorks, technical drawing to BS 8888, GD&amp;T, ISO fits and tolerancing</p></div>
+      <div class="skill"><h3>Programming &amp; analysis</h3><p>Python (NumPy, SciPy, pandas, Matplotlib), introductory FEA, LaTeX</p></div>
+      <div class="skill"><h3>Experimental &amp; test</h3><p>Load cells, pressure transducers, DAQ systems, calibration and uncertainty analysis</p></div>
+      <div class="skill"><h3>Workshop</h3><p>Manual turning, milling and welding; FDM 3D printing and prototype fabrication</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p class="sub">I'm looking for summer 2027 engineering internships in space, propulsion, fusion and defence.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:andykaca2007@gmail.com">Email me</a>
+      <a class="btn" href="https://linkedin.com/in/andy-kaca">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Andy Kaca</span>
+    <span>Built with plain HTML &amp; CSS · hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+</body>
+</html>
